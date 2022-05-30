@@ -1,0 +1,37 @@
+.popular-posts {
+  @extend %box;
+  padding-bottom: 70px;
+}
+
+.popular-posts-title-box {
+  @extend %title-box;
+}
+
+.popular-posts__title {
+  @extend %title;
+}
+
+.popular-posts-list {
+  @extend %list;
+  border-bottom: 1px solid;
+  border-color: #ebeced;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.popular-posts-item {
+  @extend %item;
+}
+
+.popular-posts-link {
+  @extend %link;
+}
+
+.popular-posts-tag {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.42;
+  color: var(--main-title-color);
+  margin-top: 60px;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,30 @@
+:root {
+  --main-text-color: #889099;
+  --main-title-color: #22252e;
+  --second-title-color: #323642;
+  --accent: #4cb649;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 375px) {
+    width: 375px;
+  }
+}
+
+.second-container {
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  @media screen and (min-width: 375px) {
+    width: 375px;
+  }
+}

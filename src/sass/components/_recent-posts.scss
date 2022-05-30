@@ -1,0 +1,71 @@
+.recent-posts__title {
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 1.38;
+  color: var(--main-title-color);
+  margin-bottom: 40px;
+}
+
+.recent-posts__list {
+  margin-bottom: -20px;
+}
+
+.recent-posts__item {
+  margin-bottom: 20px;
+}
+
+.recent-posts-card__text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: #ebeced;
+}
+
+.recent-posts-card__title {
+  @extend %card__title;
+}
+
+.recent-posts-card__name {
+  @extend %card__name;
+}
+
+.recent-posts-card__data {
+  @extend %card__dataname;
+  margin-left: 8px;
+}
+
+.recent-posts-card__items {
+  display: flex;
+  flex-wrap: wrap;
+  @extend %card-list;
+}
+
+.recent-posts-card__link {
+  @extend %card-list__link;
+}
+
+.recent-posts-card__comment {
+  @extend %card__comment;
+}
+.recent-posts-card__commentbtn {
+  @extend %card__commentbtn;
+}
+.recent-posts-card__commentcount {
+  @extend %card__commentcount;
+}
+
+.recent-posts__btnolderposts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--accent);
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--accent);
+  border-radius: 30px;
+  background-color: transparent;
+  margin-top: 60px;
+}

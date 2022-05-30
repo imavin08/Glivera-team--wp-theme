@@ -1,0 +1,23 @@
+.announcements {
+  @extend %box;
+}
+
+.announcements-title-box {
+  @extend %title-box;
+}
+
+.announcements__title {
+  @extend %title;
+}
+
+.announcements-list {
+  @extend %list;
+}
+
+.announcements-item {
+  @extend %item;
+}
+
+.announcements-link {
+  @extend %link;
+}
