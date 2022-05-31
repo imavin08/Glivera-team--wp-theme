@@ -41,18 +41,17 @@
   text-transform: uppercase;
   color: var(--second-title-color);
   margin-bottom: 30px;
-}
-
-.sign-up-item__title::after {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translatex(-50%);
-  content: "";
-  width: 24px;
-  height: 2px;
-  background-color: var(--accent);
-  border-radius: 2px;
+  &::after {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translatex(-50%);
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: var(--accent);
+    border-radius: 2px;
+  }
 }
 
 .sign-up-price-box {
@@ -149,15 +148,14 @@
 
 .sign-up-pay__item {
   margin-bottom: 32px;
-}
-
-.sign-up-pay__item:nth-child(7) {
-  margin-left: auto;
-  margin-right: auto;
+  &:nth-child(7) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .sign-up-pay-icon {
-  margin-left: 17px;
+  margin-left: 12px;
 }
 
 .sign-up-pay__anonymouslink {
@@ -167,9 +165,14 @@
   letter-spacing: 0.8px;
   text-transform: uppercase;
   color: var(--accent);
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .sign-up-pay__cardlink {

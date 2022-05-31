@@ -8,6 +8,13 @@
   line-height: 1.41;
   color: var(--main-title-color);
   margin-bottom: 14px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
 
 %card__name {
@@ -94,4 +101,11 @@
   font-size: 14px;
   line-height: 1.57;
   color: var(--second-title-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
 }
