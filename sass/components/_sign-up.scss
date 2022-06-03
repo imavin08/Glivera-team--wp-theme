@@ -2,33 +2,65 @@
   background: linear-gradient(161.3deg, #3d4251 7.63%, #272b35 90.9%);
   padding-top: 60px;
   padding-bottom: 44px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 100px;
+    padding-bottom: 53px;
+  }
 }
 
-.sign-up-title {
+.sign-up__title {
   font-weight: 300;
   font-size: 32px;
   line-height: 1.38;
   text-align: center;
   color: #ffffff;
   margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.33;
+    letter-spacing: -0.5px;
+  }
 }
 
 .sign-up__list {
   margin-bottom: -20px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-right: -20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 
-.sign-up-item {
+.sign-up__item {
   background: #ffffff;
   border: 1px solid #ebeced;
   border-radius: 6px;
   text-align: center;
   padding: 48px 55px 40px 55px;
   margin-bottom: 20px;
+  width: 315px;
+  height: 100%;
+  @media screen and (max-width: 375px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 20px;
+    width: 380px;
+    height: 340px;
+    margin-bottom: 0;
+  }
 }
 
-.sign-up-item--second {
+.sign-up__item--second {
   border: 4px solid #ff8d00;
   border-radius: 4px;
+  @media screen and (min-width: 1200px) {
+    height: 380px;
+    border-color: var(--accent);
+    padding: 59px 87px 59px 88px;
+  }
 }
 
 .sign-up-item__title {
@@ -54,7 +86,7 @@
   }
 }
 
-.sign-up-price-box {
+.sign-up__box {
   display: flex;
   justify-content: center;
   border-bottom: 1px solid;
@@ -62,7 +94,7 @@
   padding-bottom: 10px;
 }
 
-.sign-up-price-sign {
+.sign-up__sign {
   font-weight: 300;
   font-size: 24px;
   line-height: 1.33;
@@ -71,19 +103,19 @@
   padding-top: 12px;
 }
 
-.sign-up-price-number {
+.sign-up__number {
   font-weight: 300;
   font-size: 56px;
   line-height: 1.17;
   letter-spacing: -1.5px;
 }
 
-.sign-up-price-mo {
+.sign-up__mo {
   display: flex;
   align-items: flex-end;
 }
 
-.sign-up-price-old {
+.sign-up__oldprice {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
@@ -92,7 +124,7 @@
   margin-right: 8px;
 }
 
-.sign-up-price-year {
+.sign-up__priceyear {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
@@ -100,7 +132,7 @@
   margin-bottom: 25px;
 }
 
-.sign-up-discount--first {
+.sign-up__discount {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.57;
@@ -108,7 +140,7 @@
   margin-bottom: 30px;
 }
 
-.sign-up-btn {
+.sign-up__btn {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
@@ -121,12 +153,27 @@
   border: 1px solid #4cb649;
   border-radius: 30px;
   background-color: transparent;
+  @media screen and (max-width: 374px) {
+    width: 100%;
+  }
 }
 
-.sign-up-btn--color {
+.sign-up__btn--color {
   color: #ffffff;
   background: linear-gradient(0deg, #ff8d00 3.81%, #ffa400 97.78%);
   border: none;
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(0deg, #4cb649 0%, #5ddf5a 100%);
+  }
+}
+
+.sign-up-pay__box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 54px;
+  }
 }
 
 .sign-up-pay__title {
@@ -137,6 +184,10 @@
   text-align: center;
   margin-top: 36px;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin: 0;
+    margin-right: 30px;
+  }
 }
 
 .sign-up-pay__list {
@@ -144,6 +195,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: -32px;
+  @media screen and (min-width: 1200px) {
+    margin-right: -35px;
+    margin-bottom: 0;
+    align-items: center;
+  }
 }
 
 .sign-up-pay__item {
@@ -152,10 +208,23 @@
     margin-left: auto;
     margin-right: auto;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 35px;
+    margin-bottom: 0;
+  }
 }
 
-.sign-up-pay-icon {
+.sign-up-pay__icon {
   margin-left: 12px;
+}
+
+.sign-up__btnbox {
+  margin-top: 40px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 }
 
 .sign-up-pay__anonymouslink {
@@ -168,13 +237,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   background-color: transparent;
   border: none;
+  @media screen and (min-width: 1200px) {
+    margin: 0px 40px 0px 0px;
+  }
 }
 
 .sign-up-pay__cardlink {
   @extend .sign-up-pay__anonymouslink;
+  margin-top: 34px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-right: 0;
+  }
 }

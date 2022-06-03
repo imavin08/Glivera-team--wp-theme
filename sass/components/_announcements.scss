@@ -1,8 +1,12 @@
 .announcements {
   @extend %box;
+  @media screen and (min-width: 1200px) {
+    padding-top: 0px;
+    margin-top: 32px;
+  }
 }
 
-.announcements-title-box {
+.announcements__box {
   @extend %title-box;
 }
 
@@ -10,14 +14,14 @@
   @extend %title;
 }
 
-.announcements-list {
+.announcements__list {
   @extend %list;
 }
 
-.announcements-item {
+.announcements__item {
   @extend %item;
 }
 
-.announcements-link {
+.announcements__link {
   @extend %link;
 }

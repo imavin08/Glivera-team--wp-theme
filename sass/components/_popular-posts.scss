@@ -1,17 +1,29 @@
+.pop-annouc__box {
+  @media screen and (min-width: 1200px) {
+    width: 400px;
+    padding-left: 70px;
+    border-left: 1px solid #ebeced;
+  }
+}
+
 .popular-posts {
   @extend %box;
   padding-bottom: 70px;
 }
 
-.popular-posts-title-box {
+.popular-posts__box {
   @extend %title-box;
+}
+
+.popular-posts__img {
+  width: 40px;
 }
 
 .popular-posts__title {
   @extend %title;
 }
 
-.popular-posts-list {
+.popular-posts__list {
   @extend %list;
   border-bottom: 1px solid;
   border-color: #ebeced;
@@ -19,15 +31,15 @@
   margin-bottom: 30px;
 }
 
-.popular-posts-item {
+.popular-posts__item {
   @extend %item;
 }
 
-.popular-posts-link {
+.popular-posts__link {
   @extend %link;
 }
 
-.popular-posts-tag {
+.popular-posts__tag {
   font-weight: 300;
   font-size: 24px;
   line-height: 1.42;

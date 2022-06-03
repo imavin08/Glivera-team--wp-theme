@@ -15,6 +15,9 @@
   &:focus {
     color: var(--accent);
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 8px;
+  }
 }
 
 %card__name {
@@ -23,6 +26,9 @@
   line-height: 1.57;
   color: var(--second-title-color);
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 8px;
+  }
 }
 
 %card__dataname {
@@ -35,6 +41,9 @@
 %card-list {
   display: flex;
   margin-bottom: 12px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 8px;
+  }
 }
 
 %card-list__link {
@@ -94,6 +103,9 @@
 
 %item {
   margin-bottom: 16px;
+  &::marker {
+    color: var(--accent);
+  }
 }
 
 %link {

@@ -1,5 +1,8 @@
 .hero {
   padding-top: 42px;
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .hero-card {
@@ -7,14 +10,24 @@
   border: 1px solid #d7d8d9;
   border-radius: 6px;
   filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.101961));
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .hero-card__text {
   @extend %card__text;
+  @media screen and (min-width: 1200px) {
+    padding: 60px 60px 0px 60px;
+    width: 600px;
+  }
 }
 
 .hero-card__title {
   @extend %card__title;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 84px;
+  }
 }
 
 .hero-card__name {
@@ -26,11 +39,11 @@
   margin-left: 8px;
 }
 
-.hero-card-list {
+.hero-card__list {
   @extend %card-list;
 }
 
-.hero-card-list__link {
+.hero-card__link {
   @extend %card-list__link;
 }
 

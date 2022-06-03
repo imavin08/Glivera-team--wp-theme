@@ -1,3 +1,21 @@
+.mix__box {
+  padding-left: 30px;
+  padding-right: 30px;
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.recent-posts__box {
+  @media screen and (min-width: 1200px) {
+    width: 750px;
+    margin-right: 50px;
+  }
+}
+
 .recent-posts__title {
   font-weight: 300;
   font-size: 32px;
@@ -8,17 +26,41 @@
 
 .recent-posts__list {
   margin-bottom: -20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -30px;
+  }
 }
 
 .recent-posts__item {
   margin-bottom: 20px;
+  border-bottom: 1px solid;
+  border-color: #ebeced;
+  padding-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+
+.recent-posts__imgbox {
+  @media screen and (min-width: 1200px) {
+    width: 280px;
+  }
+}
+
+.recent-posts__item--desktop {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .recent-posts-card__text {
   padding-top: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid;
-  border-color: #ebeced;
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+    padding: 0;
+    width: 430px;
+  }
 }
 
 .recent-posts-card__title {
@@ -35,9 +77,8 @@
 }
 
 .recent-posts-card__items {
-  display: flex;
-  flex-wrap: wrap;
   @extend %card-list;
+  flex-wrap: wrap;
 }
 
 .recent-posts-card__link {
@@ -68,4 +109,11 @@
   border-radius: 30px;
   background-color: transparent;
   margin-top: 60px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    width: 260px;
+    margin-top: 70px;
+  }
 }
